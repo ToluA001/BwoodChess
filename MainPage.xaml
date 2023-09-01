@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BwoodChess.MainPage" BackgroundColor="#272537">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Editor Text = "Email"/>
+
+            <Editor Text = "Password"/>
+
+            <Button Text = "Login"  
+                    BackgroundColor = "Lavender"/>
+
+            <Button Text = "Sign up" 
+                    BackgroundColor = "Lavender"/> 
+            
+            <Label Text="{Binding labelText}"
+                
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
