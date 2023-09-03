@@ -11,6 +11,7 @@ namespace BwoodChess.ViewModel
     {
         private readonly Action _execute;
 
+
         public RelayCommand(Action execute)
         {
             _execute = execute;

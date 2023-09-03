@@ -3,25 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BwoodChess.MainPage" BackgroundColor="#272537">
 
+
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Editor Text = "Email"/>
+            <Editor Text = "{Binding UserNameText}"/>
 
-            <Editor Text = "Password"/>
+            <Editor Text = "{Binding PasswordText}"/>
 
             <Button Text = "Login"  
                     BackgroundColor = "Lavender"/>
 
             <Button Text = "Sign up" 
-                    BackgroundColor = "Lavender"/>
+                    BackgroundColor = "Lavender"
+                    Command="{Binding SignUpcommand}"/>
 
-            <Label Text="{Binding labelText}"/>
+            <Label Text="{Binding TLabel}" FontSize="23"/>
             
-
         </VerticalStackLayout>
     </ScrollView>
 
