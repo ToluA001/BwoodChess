@@ -15,7 +15,7 @@ namespace BwoodChess.ViewModel
             get { return _label; }
             set { 
                 _label = value; 
-                OnPropertyChanged();
+                 OnPropertyChanged();
             }
         }
 

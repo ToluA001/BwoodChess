@@ -17,10 +17,10 @@
                     BackgroundColor = "Lavender"/>
 
             <Button Text = "Sign up" 
-                    BackgroundColor = "Lavender"/> 
-            
-            <Label Text="{Binding labelText}"
-                
+                    BackgroundColor = "Lavender"/>
+
+            <Label Text="{Binding labelText}"/>
+
         </VerticalStackLayout>
     </ScrollView>
 
