@@ -19,7 +19,7 @@ namespace BwoodChess.ViewModel
                 OnPropertyChanged();
             }
         }
-
+        //-------------------------------------------------
         private string _usernametext;
         public string UserNameText
         {
@@ -33,7 +33,7 @@ namespace BwoodChess.ViewModel
                 }
             }
         }
-
+        //-------------------------------------------------
         private string _passwordtext;
         public string PasswordText
         {
@@ -47,7 +47,7 @@ namespace BwoodChess.ViewModel
                 }
             }
         }
-
+        //-------------------------------------------------
         public MainViewModel()
         {
             SignUpcommand = new RelayCommand(ShowMessage);

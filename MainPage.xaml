@@ -10,8 +10,10 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+            <Label Text="Email: " FontSize="20" TextColor="Tan" FontAttributes="Bold"/>
             <Editor Text = "{Binding UserNameText}"/>
 
+            <Label Text="Password: " FontSize="20" TextColor="Tan" FontAttributes="Bold"/>
             <Editor Text = "{Binding PasswordText}"/>
 
             <Button Text = "Login"  
