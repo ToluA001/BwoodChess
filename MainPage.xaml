@@ -24,7 +24,8 @@
                     Command="{Binding SignUpcommand}"/>
 
             <Label Text="{Binding TLabel}" FontSize="23"/>
-            
+
+
         </VerticalStackLayout>
     </ScrollView>
 

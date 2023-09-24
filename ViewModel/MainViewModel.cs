@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BwoodChess.View;
+using Microsoft.Maui.Controls;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -10,6 +12,7 @@ namespace BwoodChess.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        private readonly INavigation _navigation;
         private string _tlabel;
         public string TLabel
         {
@@ -48,14 +51,18 @@ namespace BwoodChess.ViewModel
             }
         }
         //-------------------------------------------------
-        public MainViewModel()
+        public MainViewModel(INavigation navigation)
         {
             SignUpcommand = new RelayCommand(ShowMessage);
+            _navigation = navigation;
+
         }
         public ICommand SignUpcommand { get; }
         private void ShowMessage()
         {
             TLabel = UserNameText;
+            _navigation.PushAsync(new tourneytracker());
+
         }
     }
 }
