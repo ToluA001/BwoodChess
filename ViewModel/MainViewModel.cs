@@ -13,6 +13,7 @@ namespace BwoodChess.ViewModel
     public class MainViewModel : BaseViewModel
     {
         private readonly INavigation _navigation;
+        //-------------------------------------------------
         private string _tlabel;
         public string TLabel
         {
@@ -57,6 +58,7 @@ namespace BwoodChess.ViewModel
             _navigation = navigation;
 
         }
+        //-------------------------------------------------
         public ICommand SignUpcommand { get; }
         private void ShowMessage()
         {

@@ -2,11 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BwoodChess.View.tourneytracker"
-             Title="tourneytracker">
+             Title="Tournement">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text=""
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        
+        <Button Text = "Make new tourneyment"  
+                BackgroundColor = "Lavender"/>
+        
+        <Button Text="Load existing tournyment"
+                BackgroundColor="Lavender"/>
+
     </VerticalStackLayout>
 </ContentPage>
