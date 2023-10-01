@@ -2,18 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BwoodChess.View.tourneytracker"
-             Title="Tournement">
-    <VerticalStackLayout>
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="Tournement" Background="#272537">
+    <VerticalStackLayout
+        VerticalOptions="Center">
+
+        <Button 
+            Text="make new tourney"
+            Command = "{Binding MakeNewTourney}"  
+                BackgroundColor = "Lavender"
+                WidthRequest="500" HeightRequest="60" Margin="0,0,0,5"/>
         
-        <Button Text = "Make new tourneyment"  
-                BackgroundColor = "Lavender"/>
-        
-        <Button Text="Load existing tournyment"
-                BackgroundColor="Lavender"/>
+        <Button 
+            Text="load existing tourney"
+            Command="{Binding LoadExistingTournament}"
+                BackgroundColor="Lavender" 
+                WidthRequest="500" HeightRequest="60" Margin="0,5,0,0"/>
 
     </VerticalStackLayout>
 </ContentPage>
