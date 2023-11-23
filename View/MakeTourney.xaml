@@ -3,7 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BwoodChess.View.MakeTourney"
              Title="MakeTourney" BackgroundColor="#272537">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        VerticalOptions="Center">
+
+        <Label Text="Name: "/>
+        <Editor Text="{Binding Name}"/>
+
+        <Button
+            Text="Add Person"
+            Command="{Binding AddPerson}"
+                BackgroundColor="Lavender"
+                WidthRequest="500" HeightRequest="60" Margin="0,0,0,0"/>
 
     </VerticalStackLayout>
 </ContentPage>
